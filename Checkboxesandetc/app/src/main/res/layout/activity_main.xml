@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/showToast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/chocolate_syrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chocolate_syrup" />
+
+        <CheckBox
+            android:id="@+id/sprinkles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sprinkles" />
+
+        <CheckBox
+            android:id="@+id/crushed_nuts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/crushed_nuts" />
+
+        <CheckBox
+            android:id="@+id/cherries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cherries" />
+
+        <CheckBox
+            android:id="@+id/orio_cookie_crumbles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orio_cookie_crumbles" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/showToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="showToast"
+        android:text="@string/show_toast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
